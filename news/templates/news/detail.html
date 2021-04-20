@@ -1,0 +1,11 @@
+{{ headline }}
+
+<h1>{{ headline.headline_text }}</h1>
+<ul>
+{% for story in headline.story_set.all %}
+    <li>{{ story.story_text }}</li>
+{% endfor %}
+</ul>
+
+
+
