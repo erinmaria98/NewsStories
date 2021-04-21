@@ -1,7 +1,7 @@
 {% if latest_headline_list %}
     <ul>
     {% for question in latest_headline_list %}
-        <li><a href="/news/{{% url 'news:detail' headline.id %}}/">{{ headline.headline_text }}</a></li>
+        <li><a href="/news/{{ headline.id }}/">{{ headline.headline_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
